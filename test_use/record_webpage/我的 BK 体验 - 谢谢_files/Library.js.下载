@@ -1,0 +1,40 @@
+﻿function addLoadEvent(func) {
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function') {
+        window.onload = func;
+    } else {
+        window.onload = function() {
+            if (oldonload) {
+                oldonload();
+            }
+            func();
+        }
+    }
+}
+
+function currentObjectWithInEvent(THIS) {
+    if (!THIS.tagName) {
+        return window.event.srcElement;
+    } else {
+        return THIS;
+    }
+}
+
+function AddEventObject(Object, eventType, fn) {
+    if (Object) {
+        if (Object.addEventListener) {
+            Object.addEventListener(eventType, fn, false);
+        } else {
+            Object.attachEvent('on' + eventType, fn);
+        }    
+    } 
+}
+
+function debug(text) {
+    var debug = document.getElementById("DEBUG");
+    if (debug) {
+        debug.innerHTML = text + "<br />" + debug.innerHTML;
+    } else {
+        alert(text);
+    }
+}

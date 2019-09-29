@@ -1,0 +1,101 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="zh-Hans" lang="zh-Hans" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>我的 BK 体验 - 问题</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <script type="text/javascript">var AcceptedURLsArray = 'https://id.services.smg.com';</script>
+    <link rel="icon" type="image/x-icon" href="/Projects/BK_INT/images/BK/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/Projects/BK_INT/images/BK/favicon.ico" />
+    <script type="text/javascript" src="/Common/jscript/Library.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/jscript/DisallowIFrames.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Common/controls/BrandedInputs/BrandedInput_3_6.css?version=2019.9.17.1" />
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInputCommon.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInput_3_6.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInputInit.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Common/css/GlobalDesktop.css?version=2019.9.17.1" /><!--[if lte IE 7.0]><link rel="stylesheet" type="text/css" href="/Common/css/ie7.css?version=2019.9.17.1" />
+									<![endif]-->
+									<!--[if lte IE 6.0]><link rel="stylesheet" type="text/css" href="/Common/css/ie6.css?version=2019.9.17.1" />
+									<![endif]-->
+									
+					<script type="text/javascript">
+						// BH_1.1 
+						var _bhtg_ok_to_log = false;    
+						var bhawkplt_start = new Date().getTime();
+						if(window.attachEvent){ window.attachEvent('onload',function(){_bhtg_ok_to_log=true;}); } else { window.addEventListener('load',function(){_bhtg_ok_to_log=true;},false);}
+						function bhtgIncludeLib(jsFileName, acctID) {if (typeof jsFileName == 'undefined') throw "BHTG usage error: must pass a JS file name when calling bhtgIncludeLib"; if (typeof acctID == 'undefined') throw "BHTG usage error: must pass your account ID when calling bhtgIncludeLib"; document.write(unescape("%3cscript src='" + (document.location.protocol == 'https:' ? 'https:' : 'http:') + "//lib.browserhawk.com/bhtg/" + jsFileName + "?acct=" + acctID + "'%3e %3c/script%3e"));}
+						var _bhtg_sessionid = "20190927074910CHWEBWSE05P2qwcpnfut1pzdrvfisy2h5cy";
+						var _bhtg_userid = "2qwcpnfut1pzdrvfisy2h5cy";
+						var _bhtg_siteid = "BK_INT";
+						var _bhtg_logurl = "CDID.aspx";
+							
+						function bhawkcoreonload() { if (_bhtg_ok_to_log == true) {bhawk.setSingleSessionLogging(false); bhawk.log();} else setTimeout('bhawkcoreonload();', 250);}
+						bhtgIncludeLib('bhawk.js', 'servicemgmt');
+					</script>
+					<script type="text/javascript">
+						try {
+						bhawk.setSupportFilesRoot("Common/bhtgfiles");
+						if (typeof _bhtg_siteid != 'undefined') { bhawkplt.setExtraString1(_bhtg_siteid);}
+						} catch(e) {}
+					</script>
+					<script type="text/javascript">
+						try{
+							if (typeof _bhtg_siteid != 'undefined') {bhawk.setExtraString1(_bhtg_siteid); }
+							var bhProperties = "activexcontrols,aol,aolversion,beta,browser,compressgzip,dhtml,fileupload,fullversion,hdml,ipaddr,javaapplets,javascriptver,language,majorver,minorver,minorverlet,osdetails,pda,platform,png,proxy,ssl,sslactive,vbscript,version,xml,iframes,netclrinstalled,netclrversion,proxystring,wininstallerminver,xmlhttprequest,country,countryname,javascriptenabled,flash,flashverex,javaenabled,activexenabled,vbscriptenabled,director,authorware,mapguide,directorverex,colordepth,height,width,ipixviewer,msxml,javascriptbuild,timezonediff,fontsmoothing,langsystem,languser,servicepack,displayxdpiactual,displayydpiactual,flip4mac,sessioncookies,persistentcookies,mediaplayer,acrobat,acrobatverex,mediaplayerverex,netmeetingbuild,connectiontype,browserbuild,textsize,";
+							bhawk.setPropertiesToLog(bhProperties);				
+						}catch(e) {}
+					</script>
+			<link rel="stylesheet" type="text/css" href="/Projects/BK_INT/css/Styles.css?version=2019.9.17.1" /><!--[if lt IE 7.0]><link rel="stylesheet" type="text/css" href="/Projects/BK_INT/css/IE6.css?version=2019.9.17.1" />
+									<![endif]-->
+									<style type="text/css">
+					#Progress { width: 1%; }
+				</style>
+  </head>
+  <body class="zh-Hans BK BKzh-Hans CHN 5 lightSurvey Survey DesktopMode">
+    <div id="outerframe" class="BrandedRblEnabled-JS BrandedOptEnabled-JS">
+      <div id="headerpush"> </div>
+      <div id="header">
+        <noscript>
+          <p>我的 BK 体验 - 问题</p>
+        </noscript>
+      </div>
+      <div id="middle">
+        <div id="middleextratop"> </div>
+        <div id="content">
+          <form method="post" id="surveyForm" action="Survey.aspx?c=314907" autocomplete="off">
+            <div id="surveyQuestions" class="SurveyHolder"><!-- Modules --><div class="FNSITEM inputtypeinstr" id="FNSS001000"><div class="FNSText BlockHeader"><span style="font-weight:bold;">对于您收到此邀请时光临的 BURGER KING® 餐厅，请回答以下问题。</span></div></div><div class="FNSITEM inputtyperblv" id="FNSR001000"><div class="FNSText Item">请选择您的点餐类型：</div><div class="rbListContainer"><div class="rbList"><div class="Opt2 rbloption">
+                <span class="radioButtonHolder">
+                  <input type="radio" name="R001000" value="2" id="R001000.2" class="simpleInput rblv" />
+                </span>
+                <label for="R001000.2">餐厅内用餐</label>
+              </div>
+              <div class="Opt3 rbloption">
+                <span class="radioButtonHolder">
+                  <input type="radio" name="R001000" value="3" id="R001000.3" class="simpleInput rblv" />
+                </span>
+                <label for="R001000.3">外带</label>
+              </div>
+              <div class="Opt4 rbloption">
+                <span class="radioButtonHolder">
+                  <input type="radio" name="R001000" value="4" id="R001000.4" class="simpleInput rblv" />
+                </span>
+                <label for="R001000.4">送餐上门</label>
+              </div></div></div></div><div class="pusher">&nbsp;</div><div id="Buttonholder">
+                <input type="submit" id="NextButton" value="下一步" />
+              </div>
+              <input type="hidden" name="IoNF" value="2" id="IoNF" />
+              <input type="hidden" name="PostedFNS" value="S001000|R001000" id="PostedFNS" />
+            </div>
+          </form><div class="pusher">&nbsp;</div><div id="ProgressBarPosition"><div id="ProgressBarholder"><div id="ProgressText">进度</div><div id="ProgressPercentage">1%</div><div id="ProgressBar"><div id="Progress"></div></div></div></div><div id="contenttrailer" class="pusher"> </div>
+        </div>
+        <div id="middleextrabottom"> </div>
+      </div>
+      <div id="footer">
+					<ul id="footerL">
+            <li id="footerPP"><a href="Projects/_globalconfigs/text/pdf/smgprivacypolicy/SMG_PP_zh-Hans.pdf"  onclick="window.open(this.href); return false;">SMG隐私政策</a></li>
+            <li id="footerPP"><a href="Projects/_globalconfigs/text/pdf/termsofservice/SMG_TOS_zh-Hans.pdf"  onclick="window.open(this.href); return false;">SMG服务条款</a></li><br/>
+						<li id="footerPP"><a href="DContent.aspx?Page=PrivacyText&amp;c=314907"  onclick="window.open(this.href); return false;">隐私政策</a></li>						
+						<li id="footerCR">&copy; 2019 <a href="https://www.smg.com" target="_blank">SMG</a>。保留所有权利。</li>
+					</ul>
+					</div><div id="footerpush"></div></div><div id="footerframe"></div></body>
+</html>

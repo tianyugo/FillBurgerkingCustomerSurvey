@@ -1,0 +1,55 @@
+﻿/*
+This is a modification of a click jacking defence for supported by legacy browsers.
+https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet#Best-for-now_Legacy_Browser_Frame_Breaking_Script
+The mod is that we allow some domains to to have our survey in IFrames. 
+*/
+
+function iFrameKiller() {
+    try {
+        if (self !== top) {
+            var pDocumentUrl = '';
+
+            //document.referrer should work most of the time.
+            try {
+                pDocumentUrl = document.referrer;
+                pDocumentUrl = pDocumentUrl.split('/')[2];
+            } catch (e) {
+                pDocumentUrl = '';
+            }
+            //top.location.href might work, but usually won't thanks to basic security.
+            if (pDocumentUrl === '' || typeof pDocumentUrl === 'undefined') {
+                try {
+                    pDocumentUrl = top.location.href;
+                    pDocumentUrl = pDocumentUrl.split('/')[2];
+                } catch (e) {
+                    pDocumentUrl = '';
+                }
+            }
+
+            if (typeof AcceptedURLsArray !== 'undefined') {
+                var isAllowable = false;
+                AcceptedURLsArray = AcceptedURLsArray.split(',');
+                var host = pDocumentUrl.toLowerCase();
+
+
+                for (var i = 0; i < AcceptedURLsArray.length; i++) {
+                    var allowedUrl = AcceptedURLsArray[i].toLowerCase();
+                    if (allowedUrl.length > 0 && host.indexOf(allowedUrl) != -1) {
+                        isAllowable = true;
+                    }
+                }
+
+                if (!isAllowable) {
+                    throw new Error();
+                }
+            } else {
+                throw new Error();
+            }
+        }
+    }
+    catch (exception) {
+        top.location = self.location;
+    }
+}
+
+addLoadEvent(iFrameKiller);

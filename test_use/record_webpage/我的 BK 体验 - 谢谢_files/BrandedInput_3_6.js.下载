@@ -1,0 +1,448 @@
+﻿/*
+Created by: Eric Goodloe
+Inspired by: Ryan Fait at http://ryanfait.com/.
+
+*/
+
+/* Polyfills */
+if (!"".trim) String.prototype.trim = function () { return this.replace(/^[s﻿]+|[s﻿]+$/g, ''); };
+if (!Array.prototype.some) {
+    Array.prototype.some = function (fun/*, thisArg*/) {
+        'use strict';
+
+        if (this == null) {
+            throw new TypeError('Array.prototype.some called on null or undefined');
+        }
+
+        if (typeof fun !== 'function') {
+            throw new TypeError();
+        }
+
+        var t = Object(this);
+        var len = t.length >>> 0;
+
+        var thisArg = arguments.length >= 2 ? arguments[1] : void 0;
+        for (var i = 0; i < len; i++) {
+            if (i in t && fun.call(thisArg, t[i], i, t)) {
+                return true;
+            }
+        }
+
+        return false;
+    };
+}
+if (!Array.prototype.filter) {
+    Array.prototype.filter = function (func, thisArg) {
+        'use strict';
+        if (!((typeof func === 'Function' || typeof func === 'function') && this))
+            throw new TypeError();
+
+        var len = this.length >>> 0,
+            res = new Array(len), // preallocate array
+            t = this, c = 0, i = -1;
+        if (thisArg === undefined) {
+            while (++i !== len) {
+                // checks to see if the key was set
+                if (i in this) {
+                    if (func(t[i], i, t)) {
+                        res[c++] = t[i];
+                    }
+                }
+            }
+        }
+        else {
+            while (++i !== len) {
+                // checks to see if the key was set
+                if (i in this) {
+                    if (func.call(thisArg, t[i], i, t)) {
+                        res[c++] = t[i];
+                    }
+                }
+            }
+        }
+
+        res.length = c; // shrink down array to proper size
+        return res;
+    };
+}
+
+var optHeight = "36";
+var rblHeight = "36";
+var ddlWidth = "190";
+var joy = true;
+var styletext = 'input.customCtrlLarge { display: none; } select.customCtrlLarge { position: relative; width: ' + ddlWidth + 'px; opacity: 0; filter: alpha(opacity=0); z-index: 5; } .disabled { opacity: 0.5; filter: alpha(opacity=50); }';
+try
+{ document.write('<style type="text/css">' + styletext + '</style>'); }
+catch(err)
+{ joy = false; }
+
+
+function getImagePosition(imageHeight, imageNum) {
+    if (imageNum == 0) { return "0 -1px"; }
+    else { return "0 -" + (((imageHeight * imageNum) + (imageNum * 2)) + 1) + "px"; }
+}
+
+function getSimpleInputImgPosition(imageHeight, imageNum) {
+    if (imageNum == 0) { return "0 -0px"; }
+    else { return "0 -" + (imageHeight * imageNum) + "px"; }
+}
+
+function getActiveImgPosition(imageHeight, input) {
+    if (input.className.indexOf("simpleInput") > -1)
+        return getSimpleInputImgPosition(imageHeight, 1); 
+    else if (input.className.indexOf("customCtrlLarge") > -1)
+        return getImagePosition(imageHeight, 3);
+}
+
+function getInactiveImgPosition(imageHeight, input) {
+    if (input.className.indexOf("simpleInput") > -1)
+        return getSimpleInputImgPosition(imageHeight, 0);    
+    else if(input.className.indexOf("customCtrlLarge") > -1)
+        return getImagePosition(imageHeight, 0);
+}
+
+// Setup Namespace
+var DynamicControls = {
+    initialize: function (inputBlockId) {       
+        noSelect();      
+        if (!joy) {
+            var headID = document.getElementsByTagName("head")[0];
+            var styles = document.createElement('style');
+            styles.setAttribute('type', 'text/css');
+            var newStyle = document.createTextNode(styletext);
+            styles.appendChild(newStyle);
+            headID.appendChild(styles);
+        }
+        if (document.getElementById("outerframe")) {
+            var outer = document.getElementById("outerframe")
+            outer.className = outer.className.replace("BrandedRblEnabled-JS", "BrandedRblEnabled");
+            outer.className = outer.className.replace("BrandedOptEnabled-JS", "BrandedOptEnabled");
+        }
+
+        var inputs = document.getElementsByTagName("input"), span = Array();
+        var imageHeight;
+        var a;
+
+        if (typeof inputBlockId !== 'undefined') {
+            inputs = document.querySelector("[id=" + "\'" + inputBlockId + "\'" + "]");
+        }
+         
+        // Loop through all the inputs located.
+        for (a = 0; a < inputs.length; a++) {            
+            if (hasCustomBranding(inputs[a].name) === true) {
+                continue;
+            }           
+            if (inputs[a].className.indexOf("customCtrlLarge") > -1 || inputs[a].className.indexOf("simpleInput") > -1) {
+                if (inputs[a].type == "radio") { imageHeight = rblHeight; }
+                if (inputs[a].type == "checkbox") { imageHeight = optHeight; }
+
+                span[a] = document.createElement("span");
+                addClass(inputs[a], span[a]);
+
+                if (inputs[a].checked === true)
+                    span[a].style.backgroundPosition = getActiveImgPosition(imageHeight, inputs[a]);
+                else
+                    span[a].style.backgroundPosition = getInactiveImgPosition(imageHeight, inputs[a]);
+
+                inputs[a].style.display = "none";
+                inputs[a].parentNode.insertBefore(span[a], inputs[a]);
+                addUiEvents(inputs[a], span[a]);
+            }
+        }
+
+        // If this is a drop down
+        inputs = document.getElementsByTagName("select");
+        var textnode, option, active;
+
+        // Loop through all the selects
+        for (a = 0; a < inputs.length; a++) {
+            if (inputs[a].className.indexOf("customCtrlLarge") > -1) {
+                var option = inputs[a].getElementsByTagName("option");
+
+                var textnode = document.createTextNode(option[0].childNodes[0].nodeValue);
+                for (b = 0; b < option.length; b++) {
+                    if (option[b].selected == true) { textnode = document.createTextNode(option[b].childNodes[0].nodeValue); }
+                }
+
+                span[a] = document.createElement("span");
+                span[a].className = "selectBranded";
+                span[a].id = "selectSpan" + inputs[a].name;
+                span[a].appendChild(textnode);
+                inputs[a].parentNode.insertBefore(span[a], inputs[a]);
+
+                if (inputs[a].getAttribute("disabled")) { inputs[a].previousSibling.className = inputs[a].previousSibling.className += " disabled"; }
+                else { inputs[a].onchange = DynamicControls.choose; }
+            }
+        }
+        
+        function addClass(input, span) {
+            var isNA = false;
+            if (input.value == 9)
+                isNA = true;
+
+            var isVerticalDisplay = checkIfVerticalDisplay();
+
+            var questionClasses = [];
+            if (isVerticalDisplay) 
+                questionClasses = toArray(input.parentElement.parentElement.parentElement.parentElement.parentElement.className);
+            else
+                questionClasses = toArray(input.parentNode.className); 
+
+            if (questionClasses.some(function (c) { return c.indexOf("radio-") > -1; })){
+                updateImgRadioClass(isVerticalDisplay, input, span);
+            } else if (input.className.indexOf("customCtrlLarge") > -1) {
+                span.className = input.type + "Branded";
+            } else if (input.className.indexOf("simpleInput") > -1) {
+                span.className = input.type + "SimpleInput";
+            }
+
+            function checkIfVerticalDisplay() {
+                var array = toArray(input.className);
+                if (array.some(function (a) { return a === "rblv"; }))
+                    return true;
+                return false;
+            }
+
+            function updateImgRadioClass(isVerticalDisplay, input, span) {
+                var isMultiImg = false;
+                if (questionClasses.some(function (c) { return c.indexOf("multi-image") > -1; }))
+                    isMultiImg = true;
+
+                var imageType = questionClasses.filter(function (c) { return c.indexOf("radio-") > -1;})[0];
+
+                if (isVerticalDisplay) {
+                    input.className = input.className.replace(/\bcustomCtrlLarge\b/g, "");
+                    input.style.display = "none";
+                } else if (isMobile()) {
+                    input.parentNode.className += " horizontalDisplayOption";
+                    var label = input.parentNode.getElementsByClassName("optionLabel");
+                    if (label.length > 0)
+                        label[0].style.display = "none";
+                }
+
+                if (imageType !== "") {
+                    removeClass(imageType, input.parentNode);
+                }
+                if (isNA) {
+                    span.className = "na-option spanSimpleInput";
+                } else {
+                    span.className = "spanSimpleInput ";
+                    if (isMultiImg) {
+                        span.className += imageType + input.value;
+                    } else {
+                        span.className += imageType;
+                    }
+                }
+            }
+
+            function isMobile() {
+                if (document.getElementsByTagName("body")[0].className.indexOf("MobileMode") > -1)
+                    return true;
+                return false;
+            }
+
+            function removeClass(classname, element) {
+                var cn = element.className;
+                var rxp = new RegExp('\\b' + classname + '\\b', 'g');
+                cn = cn.replace(rxp, '');
+                element.className = cn;
+            }
+        }
+
+        function addUiEvents(input, span) {
+            AddEventObject(span, 'change', DynamicControls.refresh);
+            AddEventObject(input, 'change', DynamicControls.refresh);
+
+            if (!input.getAttribute("disabled")) {
+                AddEventObject(span, 'click', DynamicControls.clickUp);
+
+                if (input.className.indexOf("simpleInput") === -1) {
+                    AddEventObject(span, 'mousedown', DynamicControls.clickDown);
+                    AddEventObject(span, 'mouseover', DynamicControls.hoverIn);
+                    AddEventObject(span, 'mouseout', DynamicControls.hoverOut);
+                }
+            } else {
+                span.className = span.className += " disabled";
+            }
+        }
+        
+        function toArray(className) {
+            if (!className || className.trim() === '') return [];
+            if (className.indexOf(' ') === -1) return [className];
+
+            return className.split(' ');
+        }
+    },
+
+    clickDown: function(e) {
+        var THIS = currentObjectWithInEvent(this);
+        var element = THIS.nextSibling;
+        if (element.type == "radio") {
+            if (element.checked == true) { THIS.style.backgroundPosition = getImagePosition(rblHeight, 5); }
+            else { THIS.style.backgroundPosition = getImagePosition(rblHeight, 2); }
+        } else if (element.type == "checkbox") {
+            if (element.checked == true) { THIS.style.backgroundPosition = getImagePosition(optHeight, 5); }
+            else { THIS.style.backgroundPosition = getImagePosition(optHeight, 2); }
+        }
+    },
+
+    clickUp: function(e) {
+        var THIS = currentObjectWithInEvent(this);
+
+        var element = THIS.nextSibling;
+
+        if (element.type == "radio") {
+            element.click();
+        } else {
+            if (element.type == "checkbox")
+                element.click();
+        }
+       
+        var inputs = document.getElementsByTagName("input");
+        // Loop through all inputs
+        for (var b = 0; b < inputs.length; b++) {
+            if (inputs[b].className.indexOf("customCtrlLarge") > -1) {
+                if (inputs[b].type == "radio") {
+                    if (element == inputs[b]) {
+                        if (inputs[b].checked == true) { inputs[b].previousSibling.style.backgroundPosition = getImagePosition(rblHeight, 1); }
+                        else { inputs[b].previousSibling.style.backgroundPosition = getImagePosition(rblHeight, 1); }
+                    } else {
+                        if (inputs[b].checked == true) { inputs[b].previousSibling.style.backgroundPosition = getImagePosition(rblHeight, 1); }
+                        else { inputs[b].previousSibling.style.backgroundPosition = getImagePosition(rblHeight, 0); }
+                    }
+                } else if (inputs[b].type == "checkbox") {
+                    if (element == inputs[b]) {
+                        if (inputs[b].checked == true) { inputs[b].previousSibling.style.backgroundPosition = getImagePosition(optHeight, 1); }
+                        else { inputs[b].previousSibling.style.backgroundPosition = getImagePosition(optHeight, 1); }
+                    } else {
+                        if (inputs[b].checked == true) { inputs[b].previousSibling.style.backgroundPosition = getImagePosition(optHeight, 1); }
+                        else { inputs[b].previousSibling.style.backgroundPosition = getImagePosition(optHeight, 0); }
+                    }
+                }
+            }
+        }
+    },
+
+    refresh: function() { 
+        var thisElement = this; 
+        while (thisElement.parentNode) { 
+            if (thisElement.localName.toLowerCase() === "form") {
+                break;
+            }
+            thisElement = thisElement.parentNode;
+        }
+
+        var inputs = thisElement.getElementsByTagName("input"); 
+        for (var b = 0; b < inputs.length; b++) {
+            if (inputs[b].className.indexOf("customCtrlLarge") > -1 || inputs[b].className.indexOf("simpleInput") > -1) { 
+                if (inputs[b].type == "radio") {
+                    if (inputs[b].checked == true) {
+                        inputs[b].previousSibling.style.backgroundPosition = getActiveImgPosition(rblHeight, inputs[b]);
+                        if (inputs[b].className.indexOf("horizontalRbOption") > 0) {
+                            var selectedOptionLbl = document.getElementsByClassName(inputs[b].name + "-selectedOption");
+                            if (selectedOptionLbl.length > 0) {
+                                selectedOptionLbl[0].innerText = inputs[b].title;
+                            }
+                        }
+                    }
+                    else { inputs[b].previousSibling.style.backgroundPosition = getInactiveImgPosition(rblHeight, inputs[b]); }
+                } else if (inputs[b].type == "checkbox") {
+                    if (inputs[b].checked == true) { inputs[b].previousSibling.style.backgroundPosition = getActiveImgPosition(rblHeight, inputs[b]); }
+                    else { inputs[b].previousSibling.style.backgroundPosition = getInactiveImgPosition(optHeight, inputs[b]); }
+                }
+            }
+        }
+    },
+
+    // Define choose function
+    choose: function(e) {
+        var THIS = currentObjectWithInEvent(this);
+        var option = THIS.getElementsByTagName("option");
+
+        for (d = 0; d < option.length; d++) {
+            if (option[d].selected == true) { document.getElementById("selectSpan" + THIS.name).childNodes[0].nodeValue = option[d].childNodes[0].nodeValue; }
+        }
+    },
+
+    hoverIn: function(e) {
+        var THIS = currentObjectWithInEvent(this);
+        var element = THIS.nextSibling;
+        if (element.className.indexOf("customCtrlLarge") > -1) {
+            if (element.type == "radio") {
+                if (element.checked == true) { THIS.style.backgroundPosition = getImagePosition(rblHeight, 1); }
+                else { THIS.style.backgroundPosition = getImagePosition(rblHeight, 1); }
+            } else if (element.type == "checkbox") {
+                if (element.checked == true) { THIS.style.backgroundPosition = getImagePosition(optHeight, 1); }
+                else { THIS.style.backgroundPosition = getImagePosition(optHeight, 1); }
+            }
+        }
+    },
+
+    hoverOut: function(e) {
+        var THIS = currentObjectWithInEvent(this);
+        var element = THIS.nextSibling;
+
+        if (element.className.indexOf("customCtrlLarge") > -1) {
+            if (element.type == "radio") {
+                if (element.checked == true) { THIS.style.backgroundPosition = getImagePosition(rblHeight, 1); }
+                else { THIS.style.backgroundPosition = getImagePosition(rblHeight, 0); }
+            } else if (element.type == "checkbox") {
+                if (element.checked == true) { THIS.style.backgroundPosition = getImagePosition(optHeight, 1); }
+                else { THIS.style.backgroundPosition = getImagePosition(optHeight, 0); }
+            }
+        }
+    }
+}
+
+
+
+
+/***********************************************
+* Disable select-text script- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+* Modified here to exclude form tags properly and cross browser by jscheuer1
+***********************************************/
+//form tags to omit:
+var omitformtags = ["input", "textarea", "select"]
+
+function disableselect(e) {
+    for (var i = 0; i < omitformtags.length; i++)
+        if (omitformtags[i] == (e.target.tagName.toLowerCase()))
+        return null;
+    return false
+}
+
+function reEnable() {
+    return true
+}
+function noSelect() {
+    if (typeof document.onselectstart != "undefined") {
+        document.onselectstart = new Function("return false")
+        if (document.getElementsByTagName) {
+            tags = document.getElementsByTagName('*')
+            for (var j = 0; j < tags.length; j++) {
+                for (var i = 0; i < omitformtags.length; i++)
+                    if (tags[j].tagName.toLowerCase() == omitformtags[i]) {
+                    tags[j].onselectstart = function() {
+                        document.onselectstart = new Function('return true')
+                    }
+                    if (tags[j].onmouseup !== null) {
+                        var mUp = tags[j].onmouseup.toString()
+                        mUp = 'document.onselectstart=new Function (\'return false\');\n' + mUp.substr(mUp.indexOf('{') + 2, mUp.lastIndexOf('}') - mUp.indexOf('{') - 3);
+                        tags[j].onmouseup = new Function(mUp);
+                    }
+                    else {
+                        tags[j].onmouseup = function() {
+                            document.onselectstart = new Function('return false')
+                        }
+                    }
+                }
+            }
+        }
+    }
+    else {
+        document.onmousedown = disableselect
+        document.onmouseup = reEnable
+    }
+}

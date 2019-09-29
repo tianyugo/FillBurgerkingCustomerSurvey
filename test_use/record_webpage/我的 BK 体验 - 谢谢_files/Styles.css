@@ -1,0 +1,152 @@
+body { background: center top; background-image: url(../images/BK/bg.jpg);background-repeat: repeat;}
+	div#outerframe { width: 800px;}
+	div#headerpush {display:none;} 
+	div#header { background-image:url('../images/BK/Header.png'); height: 129px;}
+	div#middle { background-image:url('../images/BK/Middle.png'); }	
+	div#footer { background-image:url('../images/BK/Footer.png'); height: 63px;}		
+	div#Progress {	background-image:url('../images/BK/ProgressBar.png'); }		
+	input#NextButton {
+		background-image:url('../images/BK/Button.png');
+		border-style:none; 
+		background-color:transparent;
+		color:White;
+		font-weight:bold;
+		height:47px;
+		width:147px;		
+	}	
+.checkboxBranded {background-image: url(../images/BK/checkbox.png) !important;}
+.radioBranded {background-image: url(../images/BK/radio.png)  !important;}
+
+/* Simple Radio Button & Checkbox */
+.checkboxSimpleInput { background: url(../images/BK/WSE_Checkboxes_@1x.png) no-repeat;}
+.radioSimpleInput { background: url(../images/BK/WSE_Radio_@1x.png) no-repeat; } 
+
+/* Alt. Background Color */
+.InputRowEven { background-color: #EFEAE5; }
+#content { margin:0 15px !important;}
+
+#footer {padding:10px 15px 0 15px !important;}
+li#footerCR {width:35% !important;}
+#footerCR {padding:9px 0px 0 0px !important;}
+
+body.IndexPage #surveyEntryForm, body.IndexPage div#Buttonholder {text-align:left;}
+
+/* **** Defaults ***** */
+div#footerframe { background-image:url(../../../Common/images/BottomLogoBlack.png);}
+#footer, #footer a { color:white !important;}
+
+/* **** IndexPage PickLanguageLinks **** */
+ul.languageOption {  text-align:left !important;padding:0; margin:0;}
+ul.languageOption li {display:inline-block; margin:1.5em 1em 0 0; border-radius: 4px; background-color: green; padding: .6em; }
+ul.languageOption li a { text-decoration: none; color: white;}
+
+
+/* **** Finish Page *****/
+div#finishContainer {text-align:left;margin:auto;}
+
+div#connectContent ul {padding:0;margin:auto;}
+div#connectContent ul li {display:inline;margin:0 auto;list-style:none;}
+
+.ConnectOn p.connectHeader, .ConnectOn p.FinishHeader {font-weight:bold;font-size:1.4em;margin:auto;}
+.ConnectOn div#finishIncentiveHolder
+{
+	padding:15px;
+	margin:5px;
+}
+ 
+.ConnectOn div#finishConnectHolder 
+{
+	border:solid 1px #D1D1D1;
+	padding:15px;
+	margin:5px;
+	background-color:#EFEAE5;
+	-moz-border-radius:.2em;
+	border-radius:.2em;
+	-webkit-border-radius:.2em;
+}
+.ConnectOn div#finishIncentive {float:left;width:67%;}
+.ConnectOn div#finishConnect {float:left;width:33%;text-align:center;}
+.ConnectOn div#finishIncentive hr, .ConnectOn div#finishConnect hr {border:none;background-color:#BFBBB7;height:1px;margin:1em auto;}
+.ConnectOn hr.connectHeaderRule {margin-top:.5em !important;}
+.ConnectOn div#finishConnect div#connectContent div#connectSocial {text-align:left;padding-left:1.5em;}
+.ConnectOn div#finishConnect div#connectContent div#connectSocial li {padding: 0 .25em;}
+
+.ConnectOff p.connectHeader {display:none;}
+.ConnectOff div#connectContent ul li {padding-right:1em;}
+.ConnectOff div#finishConnect {text-align:center;}
+.ConnectOff div#finishIncentive hr, .ConnectOff div#finishConnect hr {display:none;}
+.SocialOff div#finishIncentive {float:none;margin:auto;}
+
+body.ar div#header {background-image:url('../images/BK/Header_ar.png');}
+body.bg div#header {background-image:url('../images/BK/Header_bg.png');}
+body.ca div#header {background-image:url('../images/BK/Header_ca.png');}
+body.cs div#header {background-image:url('../images/BK/Header_cs.png');}
+body.da div#header {background-image:url('../images/BK/Header_da.png');}
+body.de div#header {background-image:url('../images/BK/Header_de.png');}
+body.el div#header {background-image:url('../images/BK/Header_el.png');}
+body.BKen-GB div#header {background-image:url('../images/BK/Header_en-GB.png');}
+body.HJen-GB div#header {background-image:url('../images/HJ/Header_en-GB.png');}
+body.en-IN div#header {background-image:url('../images/BK/Header_en-IN.png');}
+body.en-NZ div#header {background-image:url('../images/BK/Header_en-NZ.png');}
+body.es-ES div#header {background-image:url('../images/BK/Header_es-ES.png');}
+body.es-LA div#header {background-image:url('../images/BK/Header_es-LA.png');}
+body.eu div#header {background-image:url('../images/BK/Header_eu.png');}
+body.fi div#header {background-image:url('../images/BK/Header_fi.png');}
+body.fr-CH div#header {background-image:url('../images/BK/Header_fr-CH.png');}
+body.fr-FR div#header {background-image:url('../images/BK/Header_fr-FR.png');}
+body.gl div#header {background-image:url('../images/BK/Header_gl.png');}
+body.he div#header {background-image:url('../images/BK/Header_he.png');}
+body.hr div#header {background-image:url('../images/BK/Header_hr.png');}
+body.id div#header {background-image:url('../images/BK/Header_id.png');}
+body.it div#header {background-image:url('../images/BK/Header_it.png');}
+body.it-CH div#header {background-image:url('../images/BK/Header_it-CH.png');}
+body.ja div#header {background-image: url('../images/BK/Header_ja.png');}
+body.km div#header {background-image:url('../images/BK/Header_km.png');}
+body.ko div#header {background-image:url('../images/BK/Header_ko.png');}
+body.mn-MN div#header {background-image:url('../images/BK/Header_mn-MN.png');}
+body.ms-MY div#header {background-image:url('../images/BK/Header_ms-MY.png');}
+body.my div#header {background-image:url('../images/BK/Header_my.png');}
+body.nl div#header {background-image:url('../images/BK/Header_nl.png');}
+body.no div#header {background-image:url('../images/BK/Header_no.png');}
+body.pl div#header {background-image:url('../images/BK/Header_pl.png');}
+body.pt-BR div#header {background-image:url('../images/BK/Header_pt-BR.png');}
+body.pt-PT div#header {background-image:url('../images/BK/Header_pt-PT.png');}
+body.ro div#header {background-image:url('../images/BK/Header_ro.png');}
+body.ru div#header {background-image:url('../images/BK/Header_ru.png');}
+body.sv div#header {background-image:url('../images/BK/Header_sv.png');}
+body.th div#header {background-image:url('../images/BK/Header_th.png');}
+body.tr div#header {background-image:url('../images/BK/Header_tr.png');}
+body.vi div#header {background-image:url('../images/BK/Header_vi.png');}
+body.zh-Hans div#header {background-image:url('../images/BK/Header_zh-Hans.png');}
+body.zh-Hant div#header {background-image:url('../images/BK/Header_zh-Hant.png');}
+
+
+
+/* BRANDED LOOK - HJ */
+body.HJ { background-image: url(../images/HJ/bg.jpg);background-repeat: repeat-x;}
+body.HJ	div#outerframe { width: 822px;}
+body.HJ	div#headerpush {display:none;} 
+body.HJ	div#header { background-image:url('../images/HJ/Header.png'); height: 151px;}
+body.HJ	div#middle { background-image:url('../images/HJ/Middle.png'); }	
+body.HJ	div#footer { background-image:url('../images/HJ/Footer.png'); height: 54px;}		
+body.HJ	div#Progress {	background-image:url('../images/HJ/ProgressBar.png'); }			
+body.HJ	input#NextButton {
+		background-image:url('../images/HJ/Button.png');
+		border-style:none; 
+		background-color:transparent;
+		color:White;
+		font-weight:bold;
+		height:35px;
+		width:115px;		
+	}	
+
+/* Simple Radio Button & Checkbox */
+body.HJ .checkboxSimpleInput { background: url(../images/HJ/WSE_Checkboxes_@1x.png) no-repeat;}
+body.HJ .radioSimpleInput { background: url(../images/HJ/WSE_Radio_@1x.png) no-repeat; } 
+
+body.HJ #footer {padding:6px 15px 0 15px !important;}
+body.HJ li#footerCR {width:35% !important;}
+body.HJ #footerCR {padding:9px 0px 0 0px !important;}
+
+.ConnectOn div#finishConnectHolder { border:solid 1px #D1D1D1;	background-color:#EFEFEF;}
+.ConnectOn div#finishIncentive hr, .ConnectOn div#finishConnect hr {border:none;background-color:#BFBFBF;}

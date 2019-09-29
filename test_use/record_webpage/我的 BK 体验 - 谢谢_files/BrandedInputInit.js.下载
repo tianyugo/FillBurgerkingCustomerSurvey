@@ -1,0 +1,1 @@
+﻿addLoadEvent(DynamicControls.initialize);

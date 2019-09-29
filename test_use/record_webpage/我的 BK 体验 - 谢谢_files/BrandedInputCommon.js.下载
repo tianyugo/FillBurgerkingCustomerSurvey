@@ -1,0 +1,6 @@
+﻿function hasCustomBranding(elementName) {    
+    var hiddentFieldSelector = "[id^='hdnCustomImage-" + elementName + "']";
+
+    var customScaleHiddenControl = document.querySelector(hiddentFieldSelector);
+    return customScaleHiddenControl !== null;
+}

@@ -1,0 +1,153 @@
+.BrandedOptEnabled .checkboxBranded {
+	width: 36px;
+	height: 36px;
+	background: url(checkbox.png) no-repeat;
+	display:block;
+	position:absolute;
+	margin:-3px 3px .6em 0;
+}
+.BrandedRblEnabled .radioBranded {
+	width: 36px;
+	height: 36px;
+	background: url(radio.png) no-repeat;
+	display:block;
+	position:absolute;
+	margin:-3px 3px .6em 0;
+}
+
+.BrandedRblEnabled .inputtyperbloption .radioBranded { margin:auto !important; float:none !important; position:relative;}
+
+.selectBranded {
+	position: absolute;
+	width: 158px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+	height: 21px;
+	padding: 0 24px 0 8px;
+	color: #fff;
+	font: 12px/21px arial,sans-serif;
+	background: url(select.gif) no-repeat;
+	overflow: hidden;
+}
+
+.DesktopMode .BrandedRblEnabled .rbloption {
+    /*padding: .25em 0;*/
+}
+/*.BrandedOptEnabled .cataOption { padding:.25em 0;}*/
+
+.BrandedRblEnabled .radioButtonList .rbloption span, .BrandedRblEnabled .rbloption span.radioButtonHolder, 
+.BrandedOptEnabled .cataOption span.checkboxholder { width: 36px; height: 36px;  float:left; margin-left:0px; margin-right:3px; }
+
+.BrandedRblEnabled div.radioButtonsInline div.radioButtonList span { position:relative;}
+
+/* BrandedRblEnabled and BrandedOptEnabled classes are located against different elements between desktop and mobile. */
+body.rightToLeft .BrandedRblEnabled .radioButtonList .rbloption span, body.rightToLeft .BrandedRblEnabled .rbloption span.radioButtonHolder,
+body.rightToLeft .BrandedOptEnabled .cataOption span.checkboxholder, body.rightToLeft.BrandedRblEnabled .radioButtonList .rbloption span, body.rightToLeft.BrandedRblEnabled .rbloption span.radioButtonHolder,
+body.rightToLeft.BrandedOptEnabled .cataOption span.checkboxholder { float: right; margin-left: 6px; margin-right: 0px; }
+
+.MobileMode .checkboxBranded {
+    margin: 0 0 0 0;
+}
+
+.checkboxSimpleInput, .radioSimpleInput {
+    width: 36px !important;
+    height: 36px !important;
+    display: block;
+    position: absolute;
+    margin: -3px 3px .6em 0;
+    background-size: cover !important;
+}
+
+.MobileMode .checkboxSimpleInput, .MobileMode .radioSimpleInput {
+    margin: 0 0 36px 0;
+}
+
+.checkboxSimpleInput {
+    background: url(../../images/WSE_Checkboxes_@1x.png) no-repeat;
+}
+
+.radioSimpleInput {
+    background: url(../../images/WSE_Radio_Button_@1x.png) no-repeat;
+}
+
+.MobileMode .checkboxSimpleInput {
+    background: url(../../images/WSE_Checkboxes_@2x.png) no-repeat;
+}
+
+.MobileMode .radioSimpleInput {
+    background: url(../../images/WSE_Radio_Button_@2x.png) no-repeat;
+}
+
+.MobileMode .radioSimpleInput, .MobileMode .checkboxSimpleInput, .MobileMode .radioBranded {
+    margin-top: 0;
+}
+
+.inputtyperbloption .radioSimpleInput {
+    margin: auto !important;
+    float: none !important;
+    position: relative;
+}
+
+.spanSimpleInput {
+    width: 36px !important;
+    height: 36px !important;
+    display: block;
+    background-size: cover;
+    margin: auto;
+    float: none !important;
+    position: relative;
+}
+
+span.radio-smile5 {    
+    background-size: 36px !important;
+}
+
+
+
+
+.MobileMode div.rbloption:not(.wse-rb-tile) label {
+    position: relative;
+    display: inherit !important;
+    padding-top: 0.66em !important;
+}
+
+div.rbloption:not(.wse-rb-tile) label {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.56em;
+    max-width: calc(100% - 4em);
+}
+
+div.cataOption:not(.wse-tile) {
+    min-height: 36px;
+}
+
+div.cataOption:not(.wse-tile) > label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 0.7em !important;
+    max-width: calc(100% - 4em);
+}
+.MobileMode .cataOption:not(.wse-tile) > label {
+    position: relative;
+    display: inherit !important;
+    vertical-align: middle;
+    padding-top: 0.66em !important;
+    max-width: calc(100% - 6em);
+}
+.cataOption:not(.wse-tile) .Inputtypeother .textinputwrapper,
+.rbloption:not(.wse-rb-tile) .Inputtypeother .textinputwrapper {
+    position: absolute;
+    padding-left: 1.1em;
+    padding-top: 0.4em;
+}
+.rightToLeft .cataOption:not(.wse-tile) .Inputtypeother .textinputwrapper,
+.rightToLeft .rbloption:not(.wse-rb-tile) .Inputtypeother .textinputwrapper
+{
+    position: absolute;
+    padding-right: 1.1em;
+    padding-top: 0.4em;
+} 
+
+body.IndexPage div.radioButtonList {
+    padding-bottom:2em;
+}

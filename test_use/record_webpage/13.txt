@@ -1,0 +1,69 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="zh-Hans" lang="zh-Hans" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>我的 BK 体验 - 问题</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <script type="text/javascript">var jsText_TextAreaCounter = '\u5269\u4F59\u6570/\u5141\u8BB8\u6570\uFF1A';
+var jsText_TextAreaExceededMaximum = '\u8BF7\u5C06\u60A8\u7684\u56DE\u590D\u9650\u5236\u5728MAXCOUNT\u4E2A\u5B57\u7B26\u4EE5\u5185\u3002';
+</script>
+    <script type="text/javascript">var AcceptedURLsArray = 'https://id.services.smg.com';</script>
+    <link rel="icon" type="image/x-icon" href="/Projects/BK_INT/images/BK/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/Projects/BK_INT/images/BK/favicon.ico" />
+    <script type="text/javascript" src="/Common/jscript/Library.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/jscript/DisallowIFrames.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Common/controls/BrandedInputs/BrandedInput_3_6.css?version=2019.9.17.1" />
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInputCommon.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInput_3_6.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInputInit.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Common/css/GlobalDesktop.css?version=2019.9.17.1" /><!--[if lte IE 7.0]><link rel="stylesheet" type="text/css" href="/Common/css/ie7.css?version=2019.9.17.1" />
+									<![endif]-->
+									<!--[if lte IE 6.0]><link rel="stylesheet" type="text/css" href="/Common/css/ie6.css?version=2019.9.17.1" />
+									<![endif]-->
+									<script type="text/javascript" src="Common/jscript/TextArea.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Projects/BK_INT/css/Styles.css?version=2019.9.17.1" /><!--[if lt IE 7.0]><link rel="stylesheet" type="text/css" href="/Projects/BK_INT/css/IE6.css?version=2019.9.17.1" />
+									<![endif]-->
+									<script type="text/javascript">var jsText_PreTimeout = '\u8BF7\u6CE8\u610F\uFF0C\u60A8\u4EC5\u6709\u4E09\u5206\u949F\u5269\u4F59\u65F6\u95F4\u5B8C\u6210\u60A8\u7684\u8BC4\u8BBA\u5E76\u7EE7\u7EED\u8F6C\u81F3\u4E0B\u4E00\u9875\u3002\u5426\u5219\u60A8\u7684\u8C03\u67E5\u4F1A\u8D85\u65F6\uFF0C\u60A8\u5FC5\u987B\u91CD\u65B0\u5F00\u59CB\u8C03\u67E5\u3002'; setTimeout('alert(jsText_PreTimeout);', 900000);</script>
+    <style type="text/css">
+					#Progress { width: 48%; }
+				</style>
+  </head>
+  <body class="zh-Hans BK BKzh-Hans CHN 5 lightSurvey Survey DesktopMode">
+    <div id="outerframe" class="BrandedRblEnabled-JS BrandedOptEnabled-JS">
+      <div id="headerpush"> </div>
+      <div id="header">
+        <noscript>
+          <p>我的 BK 体验 - 问题</p>
+        </noscript>
+      </div>
+      <div id="middle">
+        <div id="middleextratop"> </div>
+        <div id="content">
+          <form method="post" id="surveyForm" action="Survey.aspx?c=365507" autocomplete="off" onsubmit="return (TextAreaMaxCount('S000122', 1200));">
+            <div id="surveyQuestions" class="SurveyHolder"><!-- Modules --><div class="FNSITEM inputtypetxt" id="FNSS000122"><div class="FNSText">
+                <label for="S000122">请至少用三句话描述您为什么对在BURGER KING®的体验感到非常满意。</label>
+              </div><div class="rbListContainer"><div class="rbList"><div class="textinputwrapper">
+                <textarea name="S000122" id="S000122" onkeyup="if(typeof TextAreaCounter == 'function') TextAreaCounter('S000122', 1200);" cols="80" rows="8">
+</textarea>
+                <div id="MaxS000122" class="InputtypetxtMax">
+                  <script type="text/javascript">if(typeof TextAreaCounter == 'function') TextAreaCounter('S000122', 1200);</script>
+                </div>
+              </div></div></div></div><div class="pusher">&nbsp;</div><div id="Buttonholder">
+                <input type="submit" id="NextButton" value="下一步" />
+              </div>
+              <input type="hidden" name="IoNF" value="155" id="IoNF" />
+              <input type="hidden" name="PostedFNS" value="S000122" id="PostedFNS" />
+            </div>
+          </form><div class="pusher">&nbsp;</div><div id="ProgressBarPosition"><div id="ProgressBarholder"><div id="ProgressText">进度</div><div id="ProgressPercentage">48%</div><div id="ProgressBar"><div id="Progress"></div></div></div></div><div id="contenttrailer" class="pusher"> </div>
+        </div>
+        <div id="middleextrabottom"> </div>
+      </div>
+      <div id="footer">
+					<ul id="footerL">
+            <li id="footerPP"><a href="Projects/_globalconfigs/text/pdf/smgprivacypolicy/SMG_PP_zh-Hans.pdf"  onclick="window.open(this.href); return false;">SMG隐私政策</a></li>
+            <li id="footerPP"><a href="Projects/_globalconfigs/text/pdf/termsofservice/SMG_TOS_zh-Hans.pdf"  onclick="window.open(this.href); return false;">SMG服务条款</a></li><br/>
+						<li id="footerPP"><a href="DContent.aspx?Page=PrivacyText&amp;c=365507"  onclick="window.open(this.href); return false;">隐私政策</a></li>						
+						<li id="footerCR">&copy; 2019 <a href="https://www.smg.com" target="_blank">SMG</a>。保留所有权利。</li>
+					</ul>
+					</div><div id="footerpush"></div></div><div id="footerframe"></div></body>
+</html>

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="zh-Hans" lang="zh-Hans" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>我的 BK 体验 - 欢迎</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <script type="text/javascript">var AcceptedURLsArray = 'https://id.services.smg.com';</script>
+    <link rel="icon" type="image/x-icon" href="/Projects/BK_INT/images/BK/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/Projects/BK_INT/images/BK/favicon.ico" />
+    <script type="text/javascript" src="/Common/jscript/Library.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/jscript/DisallowIFrames.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Common/controls/BrandedInputs/BrandedInput_3_6.css?version=2019.9.17.1" />
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInputCommon.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInput_3_6.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInputInit.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Common/css/GlobalDesktop.css?version=2019.9.17.1" /><!--[if lte IE 7.0]><link rel="stylesheet" type="text/css" href="/Common/css/ie7.css?version=2019.9.17.1" />
+									<![endif]-->
+									<!--[if lte IE 6.0]><link rel="stylesheet" type="text/css" href="/Common/css/ie6.css?version=2019.9.17.1" />
+									<![endif]-->
+									<script type="text/javascript" src="Common/jscript/AutoTab.js"> </script>
+    <link rel="stylesheet" type="text/css" href="/Projects/BK_INT/css/Styles.css?version=2019.9.17.1" /><!--[if lt IE 7.0]><link rel="stylesheet" type="text/css" href="/Projects/BK_INT/css/IE6.css?version=2019.9.17.1" />
+									<![endif]-->
+									</head>
+  <body class="IndexPage CouponEntryPage zh-Hans BK BKzh-Hans CHN 5 lightSurvey PreValidation DesktopMode">
+    <div id="outerframe" class="BrandedRblEnabled-JS BrandedOptEnabled-JS">
+      <div id="headerpush"> </div>
+      <div id="header">
+        <noscript>
+          <p>我的 BK 体验 - 欢迎</p>
+        </noscript>
+      </div>
+      <div id="middle">
+        <div id="middleextratop"> </div>
+        <div id="content">
+          <form method="post" id="surveyEntryForm" action="Survey.aspx?c=144907" autocomplete="off">
+            <div id="surveyQuestions" class="SurveyHolder"><!-- Modules --><input type="hidden" id="JavaScriptEnabled" name="JavaScriptEnabled" value="0"/><script type="text/javascript">if (document.getElementById("JavaScriptEnabled")) { document.getElementById("JavaScriptEnabled").value = "1"; } </script><input type="hidden" id="FIP" name="FIP" value="True"/><p class="IndexHeader">欢迎参与“My BURGER KING® Experience”（我的 BURGER KING® 体验）调查。</p>
+<p class="IndexText">我们重视您的坦诚反馈，并且对您能够花费时间完成此次调查表示感谢。</p>
+<p class="IndexText">完成调查后，我们将为您提供一个验证代码，请将此代码写在调查邀请中的空格处。</p>
+<p class="IndexText00"><label for="CN1">请输入印在您的单据正面的调查代码。</label></p><p class="IndexText01"><input type="text" autocomplete="off" id="CN1" name="CN1" title="CN1" maxlength="3" style="width:2.31em;" value="" onkeyup="return autoTab(this, 3, event);"/> - <input type="text" autocomplete="off" id="CN2" name="CN2" title="CN2" maxlength="3" style="width:2.31em;" value="" onkeyup="return autoTab(this, 3, event);"/> - <input type="text" autocomplete="off" id="CN3" name="CN3" title="CN3" maxlength="3" style="width:2.31em;" value="" onkeyup="return autoTab(this, 3, event);"/> - <input type="text" autocomplete="off" id="CN4" name="CN4" title="CN4" maxlength="3" style="width:2.31em;" value="" onkeyup="return autoTab(this, 3, event);"/> - <input type="text" autocomplete="off" id="CN5" name="CN5" title="CN5" maxlength="3" style="width:2.31em;" value="" onkeyup="return autoTab(this, 3, event);"/> - <input type="text" autocomplete="off" id="CN6" name="CN6" title="CN6" maxlength="1" style="width:0.97em;" value="" onkeyup="return autoTab(this, 1, event);"/></p><div id="Buttonholder"><input type="submit" id="NextButton" name="NextButton" value="开始" /></div><ul class="languageOption"><li><a href="Index.aspx?LanguageID=en-GB">English</a></li></ul></div>
+          </form>
+          <div id="contenttrailer" class="pusher"> </div>
+        </div>
+        <div id="middleextrabottom"> </div>
+      </div>
+      <div id="footer">
+					<ul id="footerL">
+            <li id="footerPP"><a href="Projects/_globalconfigs/text/pdf/smgprivacypolicy/SMG_PP_zh-Hans.pdf"  onclick="window.open(this.href); return false;">SMG隐私政策</a></li>
+            <li id="footerPP"><a href="Projects/_globalconfigs/text/pdf/termsofservice/SMG_TOS_zh-Hans.pdf"  onclick="window.open(this.href); return false;">SMG服务条款</a></li><br/>
+						<li id="footerPP"><a href="DContent.aspx?Page=PrivacyText&amp;c=144907"  onclick="window.open(this.href); return false;">隐私政策</a></li>						
+						<li id="footerCR">&copy; 2019 <a href="https://www.smg.com" target="_blank">SMG</a>。保留所有权利。</li>
+					</ul>
+					</div><div id="footerpush"></div></div><div id="footerframe"></div></body>
+</html>

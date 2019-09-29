@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="zh-Hans" lang="zh-Hans" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>我的 BK 体验 - 问题</title>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <script type="text/javascript">var AcceptedURLsArray = 'https://id.services.smg.com';</script>
+    <link rel="icon" type="image/x-icon" href="/Projects/BK_INT/images/BK/favicon.ico" />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/Projects/BK_INT/images/BK/favicon.ico" />
+    <script type="text/javascript" src="/Common/jscript/Library.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/jscript/DisallowIFrames.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Common/controls/BrandedInputs/BrandedInput_3_6.css?version=2019.9.17.1" />
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInputCommon.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInput_3_6.js?version=2019.9.17.1"> </script>
+    <script type="text/javascript" src="/Common/controls/BrandedInputs/BrandedInputInit.js?version=2019.9.17.1"> </script>
+    <link rel="stylesheet" type="text/css" href="/Common/css/GlobalDesktop.css?version=2019.9.17.1" /><!--[if lte IE 7.0]><link rel="stylesheet" type="text/css" href="/Common/css/ie7.css?version=2019.9.17.1" />
+									<![endif]-->
+									<!--[if lte IE 6.0]><link rel="stylesheet" type="text/css" href="/Common/css/ie6.css?version=2019.9.17.1" />
+									<![endif]-->
+									<link rel="stylesheet" type="text/css" href="/Projects/BK_INT/css/Styles.css?version=2019.9.17.1" /><!--[if lt IE 7.0]><link rel="stylesheet" type="text/css" href="/Projects/BK_INT/css/IE6.css?version=2019.9.17.1" />
+									<![endif]-->
+									<style type="text/css">
+					#Progress { width: 10%; }
+				</style>
+  </head>
+  <body class="zh-Hans BK BKzh-Hans CHN 5 lightSurvey Survey DesktopMode">
+    <div id="outerframe" class="BrandedRblEnabled-JS BrandedOptEnabled-JS">
+      <div id="headerpush"> </div>
+      <div id="header">
+        <noscript>
+          <p>我的 BK 体验 - 问题</p>
+        </noscript>
+      </div>
+      <div id="middle">
+        <div id="middleextratop"> </div>
+        <div id="content">
+          <form method="post" id="surveyForm" action="Survey.aspx?c=435307" autocomplete="off">
+            <div id="surveyQuestions" class="SurveyHolder"><!-- Modules --><div class="FNSITEM inputtypeinstr" id="FNSBlock200"><div class="FNSText blocktitle"><span style="font-weight:bold;">请对以下各项的满意度进行评分</span></div></div><table class="Inputtyperbl ScaleSize5 HighlySatisfiedNeitherDESC"><tr>
+                <td class="HighlySatisfiedNeitherDESCQuestion TopLeftCell"> </td>
+                <td id="HighlySatisfiedNeitherDESC5" class="Scale ScaleSize5 HighlySatisfiedNeitherDESC5">非常满意</td>
+                <td id="HighlySatisfiedNeitherDESC4" class="Scale ScaleSize5 HighlySatisfiedNeitherDESC4">满意</td>
+                <td id="HighlySatisfiedNeitherDESC3" class="Scale ScaleSize5 HighlySatisfiedNeitherDESC3">不是满意也不是不满意</td>
+                <td id="HighlySatisfiedNeitherDESC2" class="Scale ScaleSize5 HighlySatisfiedNeitherDESC2">不满意</td>
+                <td id="HighlySatisfiedNeitherDESC1" class="Scale ScaleSize5 HighlySatisfiedNeitherDESC1">非常不满意</td>
+              </tr>
+              <tr id="FNSR107000" class="InputRowOdd">
+                <td id="textR107000" class="LeftColumn Item">餐厅的氛围或气氛。</td>
+                <td class="Opt5 inputtyperbloption">
+                  <input type="radio" name="R107000" value="5" id="R107000.5" aria-labelledby="textR107000 HighlySatisfiedNeitherDESC5" class="simpleInput rbl" />
+                </td>
+                <td class="Opt4 inputtyperbloption">
+                  <input type="radio" name="R107000" value="4" id="R107000.4" aria-labelledby="textR107000 HighlySatisfiedNeitherDESC4" class="simpleInput rbl" />
+                </td>
+                <td class="Opt3 inputtyperbloption">
+                  <input type="radio" name="R107000" value="3" id="R107000.3" aria-labelledby="textR107000 HighlySatisfiedNeitherDESC3" class="simpleInput rbl" />
+                </td>
+                <td class="Opt2 inputtyperbloption">
+                  <input type="radio" name="R107000" value="2" id="R107000.2" aria-labelledby="textR107000 HighlySatisfiedNeitherDESC2" class="simpleInput rbl" />
+                </td>
+                <td class="Opt1 inputtyperbloption">
+                  <input type="radio" name="R107000" value="1" id="R107000.1" aria-labelledby="textR107000 HighlySatisfiedNeitherDESC1" class="simpleInput rbl" />
+                </td>
+              </tr>
+              <tr id="FNSR008000" class="InputRowEven">
+                <td id="textR008000" class="LeftColumn Item">食物的温度。</td>
+                <td class="Opt5 inputtyperbloption">
+                  <input type="radio" name="R008000" value="5" id="R008000.5" aria-labelledby="textR008000 HighlySatisfiedNeitherDESC5" class="simpleInput rbl" />
+                </td>
+                <td class="Opt4 inputtyperbloption">
+                  <input type="radio" name="R008000" value="4" id="R008000.4" aria-labelledby="textR008000 HighlySatisfiedNeitherDESC4" class="simpleInput rbl" />
+                </td>
+                <td class="Opt3 inputtyperbloption">
+                  <input type="radio" name="R008000" value="3" id="R008000.3" aria-labelledby="textR008000 HighlySatisfiedNeitherDESC3" class="simpleInput rbl" />
+                </td>
+                <td class="Opt2 inputtyperbloption">
+                  <input type="radio" name="R008000" value="2" id="R008000.2" aria-labelledby="textR008000 HighlySatisfiedNeitherDESC2" class="simpleInput rbl" />
+                </td>
+                <td class="Opt1 inputtyperbloption">
+                  <input type="radio" name="R008000" value="1" id="R008000.1" aria-labelledby="textR008000 HighlySatisfiedNeitherDESC1" class="simpleInput rbl" />
+                </td>
+              </tr>
+              <tr id="FNSR011000" class="InputRowOdd">
+                <td id="textR011000" class="LeftColumn Item">服务的速度。</td>
+                <td class="Opt5 inputtyperbloption">
+                  <input type="radio" name="R011000" value="5" id="R011000.5" aria-labelledby="textR011000 HighlySatisfiedNeitherDESC5" class="simpleInput rbl" />
+                </td>
+                <td class="Opt4 inputtyperbloption">
+                  <input type="radio" name="R011000" value="4" id="R011000.4" aria-labelledby="textR011000 HighlySatisfiedNeitherDESC4" class="simpleInput rbl" />
+                </td>
+                <td class="Opt3 inputtyperbloption">
+                  <input type="radio" name="R011000" value="3" id="R011000.3" aria-labelledby="textR011000 HighlySatisfiedNeitherDESC3" class="simpleInput rbl" />
+                </td>
+                <td class="Opt2 inputtyperbloption">
+                  <input type="radio" name="R011000" value="2" id="R011000.2" aria-labelledby="textR011000 HighlySatisfiedNeitherDESC2" class="simpleInput rbl" />
+                </td>
+                <td class="Opt1 inputtyperbloption">
+                  <input type="radio" name="R011000" value="1" id="R011000.1" aria-labelledby="textR011000 HighlySatisfiedNeitherDESC1" class="simpleInput rbl" />
+                </td>
+              </tr>
+              <tr id="FNSR013000" class="InputRowEven">
+                <td id="textR013000" class="LeftColumn Item">餐厅外部清洁度。</td>
+                <td class="Opt5 inputtyperbloption">
+                  <input type="radio" name="R013000" value="5" id="R013000.5" aria-labelledby="textR013000 HighlySatisfiedNeitherDESC5" class="simpleInput rbl" />
+                </td>
+                <td class="Opt4 inputtyperbloption">
+                  <input type="radio" name="R013000" value="4" id="R013000.4" aria-labelledby="textR013000 HighlySatisfiedNeitherDESC4" class="simpleInput rbl" />
+                </td>
+                <td class="Opt3 inputtyperbloption">
+                  <input type="radio" name="R013000" value="3" id="R013000.3" aria-labelledby="textR013000 HighlySatisfiedNeitherDESC3" class="simpleInput rbl" />
+                </td>
+                <td class="Opt2 inputtyperbloption">
+                  <input type="radio" name="R013000" value="2" id="R013000.2" aria-labelledby="textR013000 HighlySatisfiedNeitherDESC2" class="simpleInput rbl" />
+                </td>
+                <td class="Opt1 inputtyperbloption">
+                  <input type="radio" name="R013000" value="1" id="R013000.1" aria-labelledby="textR013000 HighlySatisfiedNeitherDESC1" class="simpleInput rbl" />
+                </td>
+              </tr>
+              <tr id="FNSR017000" class="InputRowOdd">
+                <td id="textR017000" class="LeftColumn Item">点餐的便利性。</td>
+                <td class="Opt5 inputtyperbloption">
+                  <input type="radio" name="R017000" value="5" id="R017000.5" aria-labelledby="textR017000 HighlySatisfiedNeitherDESC5" class="simpleInput rbl" />
+                </td>
+                <td class="Opt4 inputtyperbloption">
+                  <input type="radio" name="R017000" value="4" id="R017000.4" aria-labelledby="textR017000 HighlySatisfiedNeitherDESC4" class="simpleInput rbl" />
+                </td>
+                <td class="Opt3 inputtyperbloption">
+                  <input type="radio" name="R017000" value="3" id="R017000.3" aria-labelledby="textR017000 HighlySatisfiedNeitherDESC3" class="simpleInput rbl" />
+                </td>
+                <td class="Opt2 inputtyperbloption">
+                  <input type="radio" name="R017000" value="2" id="R017000.2" aria-labelledby="textR017000 HighlySatisfiedNeitherDESC2" class="simpleInput rbl" />
+                </td>
+                <td class="Opt1 inputtyperbloption">
+                  <input type="radio" name="R017000" value="1" id="R017000.1" aria-labelledby="textR017000 HighlySatisfiedNeitherDESC1" class="simpleInput rbl" />
+                </td>
+              </tr></table><div class="pusher">&nbsp;</div><div id="Buttonholder">
+                <input type="submit" id="NextButton" value="下一步" />
+              </div>
+              <input type="hidden" name="IoNF" value="32" id="IoNF" />
+              <input type="hidden" name="PostedFNS" value="R107000|R008000|R011000|R013000|R017000" id="PostedFNS" />
+            </div>
+          </form><div class="pusher">&nbsp;</div><div id="ProgressBarPosition"><div id="ProgressBarholder"><div id="ProgressText">进度</div><div id="ProgressPercentage">10%</div><div id="ProgressBar"><div id="Progress"></div></div></div></div><div id="contenttrailer" class="pusher"> </div>
+        </div>
+        <div id="middleextrabottom"> </div>
+      </div>
+      <div id="footer">
+					<ul id="footerL">
+            <li id="footerPP"><a href="Projects/_globalconfigs/text/pdf/smgprivacypolicy/SMG_PP_zh-Hans.pdf"  onclick="window.open(this.href); return false;">SMG隐私政策</a></li>
+            <li id="footerPP"><a href="Projects/_globalconfigs/text/pdf/termsofservice/SMG_TOS_zh-Hans.pdf"  onclick="window.open(this.href); return false;">SMG服务条款</a></li><br/>
+						<li id="footerPP"><a href="DContent.aspx?Page=PrivacyText&amp;c=435307"  onclick="window.open(this.href); return false;">隐私政策</a></li>						
+						<li id="footerCR">&copy; 2019 <a href="https://www.smg.com" target="_blank">SMG</a>。保留所有权利。</li>
+					</ul>
+					</div><div id="footerpush"></div></div><div id="footerframe"></div></body>
+</html>
