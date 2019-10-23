@@ -5,11 +5,24 @@
 
 ### Python3
 
-略
+我使用的是 Anaconda3。
+
+
+注意：Python3 默认已经安装了pip, pip是一个安装和管理Python包的工具，我们可以用这个工具安装selenium，在Windows命令行（cmd）输入pip即可看到。
 
 ### Selenium
 
 - 浏览器自动化测试框架：Selenium /səˈliːniəm/
+
+安装方式：在线pip
+
+
+由于 安装好的 Python 默认有 pip Python 包管理工具，可以通过 pip 非常方便的安装 Selenium。
+
+- 启动命令行工具：Win+R + cmd 
+
+- 输入命令：pip install selenium
+
 
 可以用来实现：
 
@@ -27,14 +40,6 @@
 ](https://blog.csdn.net/TestingGDR/article/details/81950593)
 
 
-安装方式：在线pip
-
-
-由于 安装好的 Python 默认有 pip Python 包管理工具，可以通过 pip 非常方便的安装 Selenium。
-
-- 启动命令行工具：Win+R + cmd 
-
-- 输入命令：pip install selenium
 
 
 
@@ -45,26 +50,40 @@
 
 -  [Chromedriver](http://chromedriver.storage.googleapis.com/index.html)
 
-根据浏览器版本下载对应的驱动，可以通过设置—关于Chrome查看自己浏览器的版本。但在实际选择驱动版本的时候，会发现没有完全对应的版本。例如我的浏览器：Google Chrome 已是最新版本
+根据浏览器版本下载对应的驱动，可以通过（设置—关于Chrome）查看自己浏览器的版本。但在实际选择驱动版本的时候，会发现没有完全对应的版本。例如我的浏览器：Google Chrome 已是最新版本
 版本 77.0.3865.90（正式版本），而我选择driver版本：77.0.3865.40  能够成功实现。
 
--  其他可供选择的驱动：
- 
 
+下载完成后，需要将Chromedriver.exe 复制到Python.exe同目录下:
+![](https://wx2.sinaimg.cn/mw690/c31bb60bly1g87xuibtqyj20j60c23z4.jpg)
+
+
+-  其他可供选择的驱动：
+ 其他驱动我并没有使用过
 
  Firefox:[https://github.com/mozilla/geckodriver/releases/](https://github.com/mozilla/geckodriver/releases/)
-
 
 
 IEdriver:[http://www.nuget.org/packages/Selenium.WebDriver.IEDriver/](http://www.nuget.org/packages/Selenium.WebDriver.IEDriver/)
 
 
 ### 程序
-根据前人的工作["Python 3 + Selenium 3 实现汉堡王客户调查提交"](https://www.cnblogs.com/herbert/p/10852841.ht )进行了进一步的改进，进一步实现了自动提取验证码。
+根据前人的工作["Python 3 + Selenium 3 实现汉堡王客户调查提交"](https://www.cnblogs.com/herbert/p/10852841.ht )进行了改进，进一步实现了自动提取验证码，非常感谢。
+
+Github地址：[https://github.com/tianyugo/FillBurgerkingCustomerSurvey](https://github.com/tianyugo/FillBurgerkingCustomerSurvey)
+
+其中：
+
+
+1. what_you_need文件夹：存放了我使用的驱动版本chromedriver.exe
+2. FeedbackCode.txt：返回的验证码会存放在这个txt中。
+3. main.py：运行程序
+4. test_use：我在测试中使用的问卷调查的每一个网页源代码，和测试程序功能（定位操作等）的代码保存在了这个文件夹。
+
 
 程序基于unittest单元测试框架。暂有改进思路：
 	
-- 实现多调查码同意完成
-
+- 实现多调查码循环完成。
+- 对该框架并不了解太多，可改写成普通的脚本。
 
 
